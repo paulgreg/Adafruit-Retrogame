@@ -11,11 +11,10 @@ Pre-built version supports the default pin/key mapping shown in the tutorial. Fo
 
 Here’s how button are connected to GPIO pin
 ````
-     6      27  17     16
-  19    5           20    12
-     13                21
+     18
+   4   17       22    23
+     27
 ````
-
 
 ### RetroPie 2.0+ Compatibility
 
