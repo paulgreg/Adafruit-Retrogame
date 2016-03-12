@@ -10,6 +10,13 @@ Pre-built version supports the default pin/key mapping shown in the tutorial. Fo
 ### Home controller setup
 
 Here’s how button are connected to GPIO pin
+
+#### PiTFT
+````
+  (5) Z  (6) ESC  (12) ENTER  (13) SPACE  (16) X
+````
+
+#### Controller
 ````
      18
    4   17       22    23

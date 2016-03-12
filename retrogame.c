@@ -87,40 +87,49 @@ struct {
 	int pin;
 	int key;
 } *io, // In main() this pointer is set to one of the two tables below.
-   ioTFT[] = {
-	// This pin/key table is used if an Adafruit PiTFT display
-	// is detected (e.g. Cupcade or PiGRRL).
-	// Input   Output (from /usr/include/linux/input.h)
-	{   2,     KEY_LEFT     },   // Joystick (4 pins)
-	{   3,     KEY_RIGHT    },
-	{   4,     KEY_DOWN     },
-	{  17,     KEY_UP       },
-	{  27,     KEY_Z        },   // A/Fire/jump/primary
-	{  22,     KEY_X        },   // B/Bomb/secondary
-	{  23,     KEY_R        },   // Credit
-	{  18,     KEY_Q        },   // Start 1P
-	{  -1,     -1           } }, // END OF LIST, DO NOT CHANGE
-	// MAME must be configured with 'z' & 'x' as buttons 1 & 2 -
-	// this was required for the accompanying 'menu' utility to
-	// work (catching crtl/alt w/ncurses gets totally NASTY).
-	// Credit/start are likewise moved to 'r' & 'q,' reason being
-	// to play nicer with certain emulators not liking numbers.
-	// GPIO options are 'maxed out' with PiTFT + above table.
-	// If additional buttons are desired, will need to disable
-	// serial console and/or use P5 header.  Or use keyboard.
-   ioStandard[] = {
-	// This pin/key table is used when the PiTFT isn't found
-	// (using HDMI or composite instead), as with our original
-	// retro gaming guide.
-	// Input   Output (from /usr/include/linux/input.h)
-	{  25,     KEY_LEFT     },   // Joystick (4 pins)
-	{   9,     KEY_RIGHT    },
-	{  10,     KEY_UP       },
-	{  17,     KEY_DOWN     },
-	{  23,     KEY_LEFTCTRL },   // A/Fire/jump/primary
-	{   7,     KEY_LEFTALT  },   // B/Bomb/secondary
-	// For credit/start/etc., use USB keyboard or add more buttons.
-	{  -1,     -1           } }; // END OF LIST, DO NOT CHANGE
+    ioTFT[] = {
+        // This pin/key table is used if an Adafruit PiTFT display
+        // is detected (e.g. Cupcade or PiGRRL).
+        // Input   Output (from /usr/include/linux/input.h)
+        {   4,     KEY_LEFT    },   // Joystick (4 pins)
+        {  17,     KEY_RIGHT    },
+        {  18,     KEY_UP      },
+        {  27,     KEY_DOWN    },
+        {  22,     KEY_LEFTCTRL },   // A/Fire/jump/primary
+        {  23,     KEY_LEFTALT  },   // B/Bomb/secondary
+        {   5,     KEY_Z        },
+        {   6,     KEY_ESC      },
+        {  12,     KEY_ENTER    },
+        {  13,     KEY_SPACE    },
+        {  16,     KEY_X        },
+
+        {  -1,     -1           } }, // END OF LIST, DO NOT CHANGE
+        // MAME must be configured with 'z' & 'x' as buttons 1 & 2 -
+        // this was required for the accompanying 'menu' utility to
+        // work (catching crtl/alt w/ncurses gets totally NASTY).
+        // Credit/start are likewise moved to 'r' & 'q,' reason being
+        // to play nicer with certain emulators not liking numbers.
+        // GPIO options are 'maxed out' with PiTFT + above table.
+        // If additional buttons are desired, will need to disable
+        // serial console and/or use P5 header.  Or use keyboard.
+        ioStandard[] = {
+            // This pin/key table is used when the PiTFT isn't found
+            // (using HDMI or composite instead), as with our original
+            // retro gaming guide.
+            // Input   Output (from /usr/include/linux/input.h)
+            {   4,     KEY_LEFT    },   // Joystick (4 pins)
+            {  17,     KEY_RIGHT    },
+            {  18,     KEY_UP      },
+            {  27,     KEY_DOWN    },
+            {  22,     KEY_LEFTCTRL },   // A/Fire/jump/primary
+            {  23,     KEY_LEFTALT  },   // B/Bomb/secondary
+            {   5,     KEY_Z        },
+            {   6,     KEY_ESC      },
+            {  12,     KEY_ENTER    },
+            {  13,     KEY_SPACE    },
+            {  16,     KEY_X        },
+            // For credit/start/etc., use USB keyboard or add more buttons.
+            {  -1,     -1           } }; // END OF LIST, DO NOT CHANGE
 
 // A "Vulcan nerve pinch" (holding down a specific button combination
 // for a few seconds) issues an 'esc' keypress to MAME (which brings up
