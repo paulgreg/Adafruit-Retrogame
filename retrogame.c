@@ -93,7 +93,7 @@ struct {
         // Input   Output (from /usr/include/linux/input.h)
         {   4,     KEY_LEFT    },   // Joystick (4 pins)
         {  17,     KEY_RIGHT    },
-        {  18,     KEY_UP      },
+        {   2,     KEY_UP      },
         {  27,     KEY_DOWN    },
         {  22,     KEY_LEFTCTRL },   // A/Fire/jump/primary
         {  23,     KEY_LEFTALT  },   // B/Bomb/secondary
@@ -119,7 +119,7 @@ struct {
             // Input   Output (from /usr/include/linux/input.h)
             {   4,     KEY_LEFT    },   // Joystick (4 pins)
             {  17,     KEY_RIGHT    },
-            {  18,     KEY_UP      },
+            {   2,     KEY_UP      },
             {  27,     KEY_DOWN    },
             {  22,     KEY_LEFTCTRL },   // A/Fire/jump/primary
             {  23,     KEY_LEFTALT  },   // B/Bomb/secondary

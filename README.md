@@ -18,7 +18,7 @@ Here’s how button are connected to GPIO pin
 
 #### Controller
 ````
-     18
+     2
    4   17       22    23
      27
 ````
