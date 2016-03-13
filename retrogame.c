@@ -121,8 +121,8 @@ struct {
 	{  12,     KEY_LEFTALT  },   // B/Bomb/secondary
 	{  27,     KEY_R        },   // Credit
 	{  17,     KEY_Q        },   // Start 1P
-	{  20,     KEY_X        },   // Credit
-	{  16,     KEY_Y        },   // Start 1P
+	{  20,     KEY_X        },
+	{  16,     KEY_Y        },
 	// For credit/start/etc., use USB keyboard or add more buttons.
 	{  -1,     -1           } }; // END OF LIST, DO NOT CHANGE
 
