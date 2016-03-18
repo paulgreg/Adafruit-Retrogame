@@ -12,9 +12,13 @@ Pre-built version supports the default pin/key mapping shown in the tutorial. Fo
 Here’s how button are connected to GPIO pin
 
 #### PiTFT
+
 ````
-  (5) Z  (6) ESC  (12) ENTER  (13) SPACE  (16) X
+  (5) TAB  (6) ENTER  (12) SPACE  (13) X  (16) Y
 ````
+
+Tab is the key to insert coin in Neo Geo games.
+Enter / space are select / start buttons.
 
 #### Controller
 ````

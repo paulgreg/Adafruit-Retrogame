@@ -97,7 +97,7 @@ struct {
         {  27,     KEY_DOWN     },
         {  22,     KEY_LEFTCTRL },   // A/Fire/jump/primary
         {  23,     KEY_LEFTALT  },   // B/Bomb/secondary
-        {   5,     KEY_ESC      },
+        {   5,     KEY_TAB      },
         {   6,     KEY_ENTER    },
         {  12,     KEY_SPACE    },
         {  13,     KEY_X        },
@@ -122,7 +122,7 @@ struct {
             {  27,     KEY_DOWN    },
             {  22,     KEY_LEFTCTRL },   // A/Fire/jump/primary
             {  23,     KEY_LEFTALT  },   // B/Bomb/secondary
-            {   5,     KEY_ESC      },
+            {   5,     KEY_TAB      },
             {   6,     KEY_ENTER    },
             {  12,     KEY_SPACE    },
             {  13,     KEY_X        },
