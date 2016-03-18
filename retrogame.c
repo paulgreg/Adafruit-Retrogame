@@ -91,18 +91,17 @@ struct {
         // This pin/key table is used if an Adafruit PiTFT display
         // is detected (e.g. Cupcade or PiGRRL).
         // Input   Output (from /usr/include/linux/input.h)
-        {   4,     KEY_LEFT    },   // Joystick (4 pins)
+        {   4,     KEY_LEFT     },   // Joystick (4 pins)
         {  17,     KEY_RIGHT    },
-        {   2,     KEY_UP      },
-        {  27,     KEY_DOWN    },
+        {   2,     KEY_UP       },
+        {  27,     KEY_DOWN     },
         {  22,     KEY_LEFTCTRL },   // A/Fire/jump/primary
         {  23,     KEY_LEFTALT  },   // B/Bomb/secondary
-        {   5,     KEY_Z        },
-        {   6,     KEY_ESC      },
-        {  12,     KEY_ENTER    },
-        {  13,     KEY_SPACE    },
-        {  16,     KEY_X        },
-
+        {   5,     KEY_ESC      },
+        {   6,     KEY_ENTER    },
+        {  12,     KEY_SPACE    },
+        {  13,     KEY_X        },
+        {  16,     KEY_Y        },
         {  -1,     -1           } }, // END OF LIST, DO NOT CHANGE
         // MAME must be configured with 'z' & 'x' as buttons 1 & 2 -
         // this was required for the accompanying 'menu' utility to
@@ -123,11 +122,11 @@ struct {
             {  27,     KEY_DOWN    },
             {  22,     KEY_LEFTCTRL },   // A/Fire/jump/primary
             {  23,     KEY_LEFTALT  },   // B/Bomb/secondary
-            {   5,     KEY_Z        },
-            {   6,     KEY_ESC      },
-            {  12,     KEY_ENTER    },
-            {  13,     KEY_SPACE    },
-            {  16,     KEY_X        },
+            {   5,     KEY_ESC      },
+            {   6,     KEY_ENTER    },
+            {  12,     KEY_SPACE    },
+            {  13,     KEY_X        },
+            {  16,     KEY_Y        },
             // For credit/start/etc., use USB keyboard or add more buttons.
             {  -1,     -1           } }; // END OF LIST, DO NOT CHANGE
 
